@@ -11,8 +11,8 @@ int lenght(char array[]){
     return i;
 }
 
-// we need this "split" function to have meaningful datas from Battery Management System or
-// Motor Driver Unit that car have. 
+// we need this "split" function to have meaningful datas from Battery Management System or Motor Driver Unit that car have. 
+
 void split(char array[10], char parameter, char destination[100][100]){
     int counter_x=0;
     int counter_y=0;
