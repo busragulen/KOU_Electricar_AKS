@@ -18,5 +18,5 @@ int main(){
     decimal_char = (char)decimal;
     tenth_char = (char)tenthf;
     
-    printf("%c   %c" , decimal_char, tenth_char);
+    printf("%c.%c" , decimal_char, tenth_char);
     }
