@@ -7,7 +7,6 @@ int number;
 int intconvert(number){
      
     convert = (char*)number+32; // this is for the team's purpose. 
-    printf("%c", convert);
     
     return convert;
 }
