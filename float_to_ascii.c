@@ -5,16 +5,10 @@ float value;
 char queue[4];
 
 char* float_to_ascii(float value){
-    value+=33.33;
+    int decimal = (int)value;
+    int tenth = (int)((value - decimal) * 100);
     
-    int decimal= (int)value; // 33.00
-    int tenth= value*100 - decimal*100; // 00.33
-    
-    queue[0]=(char)decimal;
-    queue[1]='.';
-    queue[2]=(char)tenth;
-    queue[3]='\0';
-    
+    sprintf(queue, "%d.%02d", decimal, tenth);
     return queue;
 }
 

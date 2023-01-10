@@ -2,18 +2,10 @@ float value;
 int data_no;
 char queue[20][4];
 
-char* float_to_ascii(float value, int data_no){
-    value+=33.33;
+char* float_to_ascii(float value, int data_no) {
+    int decimal = (int)value;
+    int tenth = (int)((value - decimal) * 100);
     
-    int decimal= (int)value; // 33.00
-    int tenth= value*100 - decimal*100; // 00.33
-    
-   
-    queue[data_no][0]=(char)decimal;
-    queue[data_no][1]='.';
-    queue[data_no][2]=(char)tenth;
-    queue[data_no][3]='\0';
-       
-    
+    sprintf(queue[data_no], "%d.%02d", decimal, tenth);
     return queue[data_no];
 }
