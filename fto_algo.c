@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char* fto(float value[100], char queue[4]){ // fto = float to ascii
+char* fta(float value[100], char queue[4]){ // fta = float to ascii
 
     for (int i=0; i<100; i++){
     value[i]+=32.32f;
@@ -25,6 +25,6 @@ int main(){
 
     printf("enter a value\n"); // this value gonna be received in real
     scanf("%f", &value);
-    printf("%s", fto(value,queue)); // huge convenience XD
+    printf("%s", fta(value,queue)); // huge convenience XD
     return 0;
 }
