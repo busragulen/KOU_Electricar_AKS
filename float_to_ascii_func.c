@@ -1,7 +1,7 @@
 char* fto(float value[100], char queue[4]){ // fto = float to ascii
     
     for (int i=0; i<100; i++){
-    value[i]+=33.33f;
+    value[i]+=32.32f;
 
     int decimal= (int)value[i]; // 33.00
     int tenth= value[i]*100 - decimal*100; // 00.33
